@@ -1,3 +1,7 @@
+// ==============================
+// File: com/gym/models/BasicMembership.java
+// ==============================
+
 package com.gym.models;
 
 public class BasicMembership extends Membership {
@@ -6,12 +10,12 @@ public class BasicMembership extends Membership {
         this.membershipType = "Basic";
         this.monthlyFee = 29.99;
     }
-    
+
     @Override
     public void calculateFee() {
-        System.out.println("Calculating basic membership fee: $" + monthlyFee);
+        System.out.println("Calculating Basic Membership fee: $" + monthlyFee);
     }
-    
+
     @Override
     public void displayDetails() {
         System.out.println("Basic Membership for " + memberName + ": $" + monthlyFee + "/month");

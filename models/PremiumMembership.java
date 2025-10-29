@@ -1,3 +1,7 @@
+// ==============================
+// File: com/gym/models/PremiumMembership.java
+// ==============================
+
 package com.gym.models;
 
 public class PremiumMembership extends Membership {
@@ -6,14 +10,14 @@ public class PremiumMembership extends Membership {
         this.membershipType = "Premium";
         this.monthlyFee = 59.99;
     }
-    
+
     @Override
     public void calculateFee() {
-        System.out.println("Calculating premium membership fee: $" + monthlyFee);
+        System.out.println("Calculating Premium Membership fee: $" + monthlyFee);
     }
-    
+
     @Override
     public void displayDetails() {
-        System.out.println("Premium Membership for " + memberName + ": $" + monthlyFee + "/month (Includes all features)");
+        System.out.println("Premium Membership for " + memberName + ": $" + monthlyFee + "/month");
     }
 }
