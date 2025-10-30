@@ -4,20 +4,22 @@
 
 package com.gym.models;
 
+/**
+ * Skeleton implementation of PremiumMembership
+ */
 public class PremiumMembership extends Membership {
+
     public PremiumMembership(String memberName) {
-        this.memberName = memberName;
-        this.membershipType = "Premium";
-        this.monthlyFee = 59.99;
+        // TODO: initialize memberName, membershipType, monthlyFee
     }
 
     @Override
     public void calculateFee() {
-        System.out.println("Calculating Premium Membership fee: $" + monthlyFee);
+        // TODO: implement fee calculation
     }
 
     @Override
     public void displayDetails() {
-        System.out.println("Premium Membership for " + memberName + ": $" + monthlyFee + "/month");
+        // TODO: implement display details
     }
 }

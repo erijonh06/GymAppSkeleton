@@ -5,14 +5,14 @@
 package com.gym.models;
 
 /**
- * Abstract base class for all memberships
- * Liskov Substitution: BasicMembership and PremiumMembership can replace this
+ * Skeleton abstract base class for all memberships
  */
 public abstract class Membership {
+
     protected String memberName;
     protected String membershipType;
     protected double monthlyFee;
 
-    public abstract void calculateFee();
-    public abstract void displayDetails();
+    public abstract void calculateFee();  // TODO: implement in subclasses
+    public abstract void displayDetails(); // TODO: implement in subclasses
 }

@@ -10,9 +10,7 @@ import com.gym.models.*;
 
 /**
  * GymAppController acts as the central coordinator.
- * SOLID Principles:
- * - SRP: Only coordinates managers and factory.
- * - D: Depends on abstractions via injected managers, not concrete logic.
+ * Skeleton implementation: methods are defined but not implemented.
  */
 public class GymAppController {
 
@@ -32,28 +30,14 @@ public class GymAppController {
     }
 
     public void registerMember(String name, String membershipType) {
-        try {
-            // Factory Method Pattern: creates membership
-            Membership membership = membershipFactory.createMembership(membershipType, name);
-
-            memberManager.addMember(name, membership); // SRP: memberManager handles storage
-            Member member = memberManager.getMember(name);
-
-            paymentManager.processPayment(member); // Delegation
-            System.out.println("Member " + name + " registered successfully with " + membershipType + " membership");
-        } catch (Exception e) {
-            System.err.println("Error registering member: " + e.getMessage());
-        }
+        // TODO: implement registration logic
     }
 
     public void scheduleClass(String className, String trainerName) {
-        classManager.createClass(className, trainerName); // SRP
-        System.out.println("Class " + className + " scheduled with trainer " + trainerName);
+        // TODO: implement class scheduling logic
     }
 
     public void assignTrainerToClass(String className, String trainerName) {
-        Trainer trainer = new Trainer(trainerName, "General"); // Builder pattern could be applied later
-        classManager.assignTrainer(className, trainer);
-        System.out.println("Trainer " + trainerName + " assigned to class " + className);
+        // TODO: implement trainer assignment logic
     }
 }

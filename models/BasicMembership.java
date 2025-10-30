@@ -4,20 +4,22 @@
 
 package com.gym.models;
 
+/**
+ * Skeleton implementation of BasicMembership
+ */
 public class BasicMembership extends Membership {
+
     public BasicMembership(String memberName) {
-        this.memberName = memberName;
-        this.membershipType = "Basic";
-        this.monthlyFee = 29.99;
+        // TODO: initialize memberName, membershipType, monthlyFee
     }
 
     @Override
     public void calculateFee() {
-        System.out.println("Calculating Basic Membership fee: $" + monthlyFee);
+        // TODO: implement fee calculation
     }
 
     @Override
     public void displayDetails() {
-        System.out.println("Basic Membership for " + memberName + ": $" + monthlyFee + "/month");
+        // TODO: implement display details
     }
 }

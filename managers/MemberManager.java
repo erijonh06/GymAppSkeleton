@@ -11,18 +11,18 @@ import java.util.Map;
 
 /**
  * SRP: Only manages member data (add, get)
+ * Skeleton implementation: methods declared but not implemented
  */
 public class MemberManager {
+
     private Map<String, Member> members = new HashMap<>();
 
     public void addMember(String name, Membership membership) {
-        members.put(name, new Member(name, membership));
-        System.out.println("Added member: " + name);
+        // TODO: add member to the map
     }
 
     public Member getMember(String name) {
-        Member member = members.get(name);
-        if (member == null) throw new IllegalArgumentException("Member not found: " + name);
-        return member;
+        // TODO: return member from the map
+        return null;
     }
 }

@@ -11,19 +11,18 @@ import java.util.Map;
 
 /**
  * SRP: Only manages classes and trainer assignments
+ * Skeleton implementation: methods declared but not implemented
  */
 public class ClassManager {
+
     private Map<String, GymClass> classes = new HashMap<>();
 
     public GymClass createClass(String className, String trainerName) {
-        GymClass gymClass = new GymClass(className, "Schedule TBD", 20);
-        classes.put(className, gymClass);
-        System.out.println("Created class: " + className);
-        return gymClass;
+        // TODO: create GymClass object and store it
+        return null;
     }
 
     public void assignTrainer(String className, Trainer trainer) {
-        GymClass gymClass = classes.get(className);
-        if (gymClass != null) gymClass.assignTrainer(trainer); // Delegation
+        // TODO: assign trainer to existing GymClass
     }
 }

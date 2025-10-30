@@ -7,21 +7,27 @@ import com.gym.managers.PaymentManager;
 import com.gym.factory.MembershipFactory;
 
 public class Main {
+
     public static void main(String[] args) {
+        // Initialize skeleton managers and factory
         MembershipFactory factory = new MembershipFactory();
         MemberManager memberManager = new MemberManager();
         ClassManager classManager = new ClassManager();
         PaymentManager paymentManager = new PaymentManager();
-        
+
+        // Initialize controller
         GymAppController appController = new GymAppController(
             memberManager, classManager, paymentManager, factory
         );
-        
+
         System.out.println("=== Gym Management System ===");
+
+        // Skeleton calls (methods do nothing in skeleton)
         appController.registerMember("John Doe", "premium");
         appController.registerMember("Jane Smith", "basic");
         appController.scheduleClass("Yoga Morning", "Alice Johnson");
         appController.assignTrainerToClass("Yoga Morning", "Alice Johnson");
+
         System.out.println("=== Demo Complete ===");
     }
 }

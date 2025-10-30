@@ -4,15 +4,25 @@
 
 package com.gym.models;
 
+/**
+ * Skeleton implementation of Trainer
+ */
 public class Trainer {
+
     private String name;
     private String specialty;
 
     public Trainer(String name, String specialty) {
-        this.name = name;
-        this.specialty = specialty;
+        // TODO: initialize name and specialty
     }
 
-    public String getName() { return name; }
-    public String getSpecialty() { return specialty; }
+    public String getName() {
+        // TODO: return trainer name
+        return null;
+    }
+
+    public String getSpecialty() {
+        // TODO: return trainer specialty
+        return null;
+    }
 }
